@@ -15,7 +15,7 @@ void setup(){
   strokeWeight(20);
   stroke(0);
   
-  frameRate(60);
+  frameRate(50);
   gifExport = new GifMaker(this, "export.gif");
   gifExport.setRepeat(0);
 }
