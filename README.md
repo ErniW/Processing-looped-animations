@@ -1,10 +1,12 @@
 ## Processing-looped-animations
 As requested by students, various approaches to create looped gif using sine wave and Perlin Noise for the first homework. 
 
+*You can customize the code,you don't have to use sine or Perlin noise at all. If your sketch is periodical use similar method to stop running at that moment.*
+
 **How does it work?**
 1. Set the desired length in frames.
-2. Program will divide the frames into steps to match range 0 - 2PI. The 2Pi is the full circle so we know that we reached the exact same point. 
-3. The noise is computed based on formula to calculate a point on a circle using sine and cosine.
+2. Program will divide the frames into steps to match range 0 - 2PI. The 2Pi means we ended a circle. 
+3. The noise is computed based on a point on a circle using sine and cosine.
 4. When timesteps reach 2Pi the program stops recording.
 
 ### Sine wave periods
@@ -13,7 +15,7 @@ As requested by students, various approaches to create looped gif using sine wav
 - For one dimensional movement 0 - Pi is enough as it goes back and forth.
 
 ### Circular Perlin Noise
-In simplest words: we do a circle around a point in Perlin Noise 2D texture. That ensures we start and finish at same point.
+In simplest words: we do a circle around a point in Perlin Noise 2D texture. That ensures we start and finish at same point. Check the explanatory sketch.
 - After setting the desired framerate the circle is divided into angle step.
 - If we have many steps consider changing the radius of circle or smoothness parameters. You can do it by trial and error. Avoid setting them too high or too low.
 
