@@ -15,7 +15,7 @@ As requested by students, various approaches to create looped gif using sine wav
 ### Circular Perlin Noise
 In simplest words: we do a circle around a point in Perlin Noise 2D texture. That ensures we start and finish at same point.
 - After setting the desired framerate the circle is divided into angle step.
-- If we have many steps consider changing the radius of circle or smoothness parameters. You can do it by trial and error.
+- If we have many steps consider changing the radius of circle or smoothness parameters. You can do it by trial and error. Avoid setting them too high or too low.
 
 ## Exporting frames:
 - You can use `saveFrame("####.png");` similarly to what we had during our first classes with Processing. Then you can import frames to Adobe Premiere or After Effects, or any other software you know from first year's classes. This method has most flexibility.
@@ -26,4 +26,5 @@ In simplest words: we do a circle around a point in Perlin Noise 2D texture. Tha
 - For high quality you should export it as a video.
 - You can add smooth frame transition or antialiasing during postprocessing in Adobe software.
 - After importing image sequence remember to set correct framerate.
-- I saw that last frame is treated as black, to have seamless loop just cut the last frame during export.
+- I saw that last frame is saved as black, to have seamless loop just cut the last frame during export.
+- Sketch runs much slower when it's saving the image files. It doesn't mean the animation itself is slow.
